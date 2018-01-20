@@ -1,0 +1,9 @@
+// Para iniciar a api Json-Server
+json-server db.json
+
+// Para o angular
+// Iniando o servidor 
+ng serve
+
+// Criando um componente sem o arquivo de testes (--spec=false)
+ng g c restaurant-detail/reviews --spec=false
