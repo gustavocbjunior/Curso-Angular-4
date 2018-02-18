@@ -7,3 +7,6 @@ ng serve
 
 // Criando um componente sem o arquivo de testes (--spec=false)
 ng g c restaurant-detail/reviews --spec=false
+
+// O Angular tem um cheat sheet que pode servir de cola quando precisar lembrar de algo
+https://angular.io/guide/cheatsheet
