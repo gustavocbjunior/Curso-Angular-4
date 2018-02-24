@@ -13,7 +13,7 @@ export class ErrorHandler {
         }
 
         console.log(errorMessage);
-        
+
         return Observable.throw(errorMessage);
     }
 }
