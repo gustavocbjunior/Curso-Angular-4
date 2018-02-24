@@ -9,21 +9,23 @@ export class InputComponent implements OnInit, AfterContentInit {
 
   @Input() label: string;
   @Input() errorMessage: string;
-  @Input() showTip: boolean = true;
+  @Input() showTip: boolean;
 
   input: any;
 
   @ContentChild(NgModel) model: NgModel;
   @ContentChild(FormControlName) control: FormControlName;
 
-  constructor() { }
+  constructor() {
+    this.showTip = true;
+  }
 
   ngOnInit() {
   }
 
   ngAfterContentInit() {
     this.input = this.model || this.control;
-    if(this.input === undefined) {
+    if (this.input === undefined) {
       throw new Error('Esse componente precisa ser usado com uma diretiva ngModel ou FormControlName');
     }
   }
